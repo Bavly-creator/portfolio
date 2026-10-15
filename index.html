@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bavly Romany | Software Engineer Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef2f5;--card:#fff;--ink:#14263b;--mute:#5a6b7d;--line:#c9d3dc;--acc:#0f7c7a;--hi:#e0a100;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1a26;--card:#15263a;--ink:#e6edf3;--mute:#9db0c2;--line:#2b4056;--acc:#4fc3bf;--hi:#f0b429}}
+:root[data-theme="dark"]{--bg:#0e1a26;--card:#15263a;--ink:#e6edf3;--mute:#9db0c2;--line:#2b4056;--acc:#4fc3bf;--hi:#f0b429}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 'IBM Plex Sans',system-ui,sans-serif}
+h1,h2,h3{font-family:'Space Grotesk',system-ui,sans-serif;line-height:1.15;margin:0}
+main{max-width:980px;margin:0 auto;padding:0 20px 60px}
+a{color:var(--acc)}
+a:focus-visible{outline:3px solid var(--hi);outline-offset:2px}
+.hero{padding:56px 0 40px;display:grid;gap:32px;grid-template-columns:1.1fr .9fr;align-items:center}
+.hero h1{font-size:clamp(2.2rem,6vw,3.6rem);letter-spacing:-.02em}
+.hero p{max-width:52ch;color:var(--mute);font-size:1.1rem}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.links a{padding:9px 16px;border:1.5px solid var(--ink);border-radius:6px;color:var(--ink);text-decoration:none;font-weight:500}
+.links a.p{background:var(--ink);color:var(--bg)}
+.stack{display:flex;flex-direction:column;gap:6px}
+.stack div{padding:12px 16px;border:1.5px solid var(--line);background:var(--card);border-radius:6px;display:flex;justify-content:space-between;gap:12px}
+.stack b{font-family:'Space Grotesk',sans-serif}
+.stack span{color:var(--mute);font-size:.9rem;text-align:right}
+.stack div:nth-child(1){margin-left:0;border-left:6px solid var(--hi)}
+.stack div:nth-child(2){margin-left:14px;border-left:6px solid var(--acc)}
+.stack div:nth-child(3){margin-left:28px;border-left:6px solid var(--acc)}
+.stack div:nth-child(4){margin-left:42px;border-left:6px solid var(--ink)}
+section{padding:36px 0;border-top:1.5px solid var(--line)}
+h2{font-size:1.7rem;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.proj{background:var(--card);border:1.5px solid var(--line);border-radius:8px;padding:22px}
+.proj h3{font-size:1.2rem;margin-bottom:6px}
+.tags{color:var(--acc);font-size:.88rem;font-weight:500;margin:0 0 10px}
+.proj p{margin:0 0 10px;color:var(--mute)}
+.proj .big{color:var(--ink)}
+dl{display:grid;grid-template-columns:max-content 1fr;gap:10px 24px;margin:0}
+dt{font-weight:500}dd{margin:0;color:var(--mute)}
+.exp{background:var(--card);border:1.5px solid var(--line);border-radius:8px;padding:22px}
+.exp ul{margin:10px 0 0;padding-left:20px;color:var(--mute)}
+.cert li{margin-bottom:8px}
+@media(max-width:720px){.hero{grid-template-columns:1fr}dl{grid-template-columns:1fr}dt{margin-top:6px}}
+</style></head><body><main>
+<header class="hero">
+<div>
+<h1>Bavly Romany Nabih</h1>
+<p>Software engineer who builds complete, tested solutions from hardware to interface. Year 3 Software Engineering student, CCNA certified, based in Cairo.</p>
+<div class="links">
+<a class="p" href="mailto:romanybavly66@gmail.com">Email me</a>
+<a href="https://github.com/Bavly-creator">GitHub</a>
+<a href="https://linkedin.com/in/bavly-romany544">LinkedIn</a>
+</div></div>
+<div class="stack" aria-label="Skill layers">
+<div><b>Hardware</b><span>ESP32-C3, sensors, 3D-printed enclosure</span></div>
+<div><b>Network</b><span>CCNA, VLANs, Cisco switches</span></div>
+<div><b>Backend</b><span>SQL Server, REST APIs</span></div>
+<div><b>Interface</b><span>JavaScript, Flutter</span></div>
+</div>
+</header>
+
+<section><h2>Projects</h2><div class="grid">
+<article class="proj"><h3>Wearable Fall Detection System</h3><p class="tags">Embedded IoT, C, Flutter, Dart</p>
+<p>A wearable that detects falls in real time using an ESP32-C3, an MPU-6050 motion sensor and a MAX30102 heart-rate sensor, in a custom 3D-printed case.</p>
+<p>A Flutter companion app shows fall alerts on Android and iOS from one codebase.</p></article>
+<article class="proj"><h3>Software Testing: Web QA</h3><p class="tags">Cypress, Selenium, Postman</p>
+<p>A three-layer test pipeline: end-to-end tests in Cypress, UI regression in Selenium, and REST API checks in Postman, with documented test cases and request/response contracts.</p></article>
+<article class="proj"><h3>Hospital Management System</h3><p class="tags">HTML, CSS, JavaScript, SQL Server</p>
+<p>Five modules: patients, doctors, appointments, departments and billing. The SQL Server backend has 12+ normalized tables and full CRUD operations.</p></article>
+<article class="proj"><h3>EDA Simulation Suite</h3><p class="tags">JavaScript, HTML, CSS</p>
+<p>A browser-based electronic design automation platform with five modules, including a CMOS circuit simulator and a K-Map solver, written in vanilla JavaScript with no libraries.</p></article>
+</div></section>
+
+<section><h2>Experience</h2>
+<div class="exp"><h3>Technical Intern, ELMASRIA</h3>
+<p class="tags">Jul 2025 to Sep 2025, Cairo (on-site)</p>
+<ul><li>Configured Cisco switches: VLANs, port assignments and network segmentation.</li>
+<li>Installed and maintained fire alarm systems using Simplex control panels.</li>
+<li>Programmed and tested relays for automated electrical control and protection.</li>
+<li>Set up servers, including cabling and network configuration, and fixed connectivity issues.</li></ul></div></section>
+
+<section><h2>Skills</h2><dl>
+<dt>Languages</dt><dd>JavaScript, Python, C++, Dart</dd>
+<dt>Web</dt><dd>HTML5, CSS3, Vanilla JavaScript</dd>
+<dt>Mobile</dt><dd>Flutter (iOS and Android)</dd>
+<dt>Database</dt><dd>Microsoft SQL Server: schema design, CRUD, relational modeling</dd>
+<dt>Testing</dt><dd>Cypress, Selenium, Postman, manual test design</dd>
+<dt>Networking</dt><dd>CCNA, Cisco switching, VLANs, cybersecurity basics</dd>
+<dt>Tools</dt><dd>Git, GitHub, REST APIs, OOP</dd></dl></section>
+
+<section><h2>Education and certificates</h2>
+<p><b>B.Sc. Software Engineering</b>, Egyptian Chinese University, 2023 to 2028 (expected). CGPA 3.54 / 4.0.</p>
+<ul class="cert"><li>CCNA, Egyptian Chinese University, Jul 2025</li>
+<li>Introduction to Cybersecurity, Cisco Networking Academy, Jul 2026</li>
+<li>Digital Safety and Security Awareness, Cisco Networking Academy, Jul 2026</li></ul></section>
+
+<section><h2>Contact</h2>
+<p>Looking for a software engineering internship. Write to <a href="mailto:romanybavly66@gmail.com">romanybavly66@gmail.com</a> or call +20 128 346 9430.</p></section>
+</main></body></html>
